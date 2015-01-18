@@ -1,12 +1,84 @@
+<!DOCTYPE html>
 <html>
 <head>
-<title> Homepage - Avi Aryan </title>
+
+  <meta charset="UTF-8">
+  <title>Avi's Homepage</title>
+  
+  <meta name="viewport" content="width=device-width">
+  <meta name="author" content="Avi Aryan">
+  <link rel="author" href="https://plus.google.com/u/0/+AviAryan/posts">
+  
+  <link href="main.css" rel="stylesheet" />
+  <link href="../assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	
+	<script type="text/javascript">
+	function imghover(element) {
+    	element.setAttribute('src', 'profile.png');
+	}
+	function imgunhover(element) {
+   		element.setAttribute('src', 'avi.jpg');
+	}
+	</script>
 </head>
 
 <body>
 
-Hi there . Just a start !
+<div id="menubar">
+	<span class="menu"> <!-- for lefter padding -->
+	</span>
+	<span class="menu"> 
+		<i class="fa fa-home"></i> Home 
+	</span>
+	<span class="separator"></span>
+	<span class="menu">
+		<i class="fa fa-pencil"></i> Blog
+	</span>
+	<span class="separator"></span>
+	<span class="menu">
+		<i class="fa fa-download"></i> Softwares
+	</span>
+</div>
+
+<div id="content">
+
+	<div id="shortbio">
+	<img src="avi.jpg" onmouseover="imghover(this);" onmouseout="imgunhover(this);"><br>
+	Developer, Indian Food Lover, Quora Addict
+	</div>
+	
+	<div id="post">
+	<h1>About Me</h1>
+	
+	<div id="matter">
+	Hi there <i class="fa fa-smile-o"></i> !<br>
+	I am Avi Aryan currently pursuing B.Tech in Information Technology in IIIT Vadodara, India.<br>
+	My current passions are coding, web-designing and counter strike.
+
+	<h2>Features of this page</h2>
+	<ul>
+		<li>Full mobile compatibility. Page optimized for viewing in any resolution using media queries.</li>
+		<li>Light weight - not using any external frameworks</li>
+	</ul>
+
+	</div>
+
+	</div>
+
+
+</div>
+
+
+<div id="footer">
+	<a href="http://www.github.com/aviaryan"><i class="fa fa-github"></i></a>
+	<i class="fa fa-stack-overflow"></i>
+	<i class="fa fa-twitter"></i>
+	<i class="fa fa-facebook"></i>
+	<i class="fa fa-google-plus"></i>
+	<i class="fa fa-skype"></i>
+	<i class="fa fa-trello"></i>
+</div>
+
 
 </body>
-
 </html>
