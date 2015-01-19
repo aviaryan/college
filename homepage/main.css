@@ -29,8 +29,6 @@ body {
 #menubar .menu {
 	padding-left: 5px;
 	padding-right: 5px;
-/* 	border-right: 1px solid;
-border-color: #929292; */
 	color: white;
 }
 
@@ -81,6 +79,7 @@ border-color: #929292; */
 
 
 #matter {
+	font-family: Consolas;
 	font-size: 18px;
 	color: #3C3C3C;
 }
@@ -98,13 +97,26 @@ border-color: #929292; */
 
 /** Design **/
 
-a i.fa { 
-	color: black;
+.menu a {
+	color: white;
+	text-decoration: none;
 }
 
 .separator:after {
 	content: '|';
 }
+
+#links a {
+	color: #818282;
+	text-decoration: none;
+}
+
+#links a .fa-github { color: black; }
+#links a .fa-stack-exchange { color: #185397;}
+#links a .fa-twitter { color: #5ea9dd;}
+#links a .fa-facebook-square { color: #3b5998;}
+#links a .fa-google-plus-square { color: #d94635;}
+#links a .fa-skype { color: #00a7e5;}
 
 /** media queries **/
 
