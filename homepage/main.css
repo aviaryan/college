@@ -87,7 +87,7 @@ border-color: #929292; */
 
 #footer { 
 	text-align: center;
-	position: absolute;
+	position: fixed;
 	bottom: 0px; 
 	padding-top: 5px;
 	padding-bottom: 5px;
@@ -124,6 +124,8 @@ a i.fa {
 	#content { width: 100%; }
 	#shortbio { display: none; }
 	#post { margin-left: 10px; margin-right: 10px; }
-	#menubar .menu { padding-left: 0px; padding-right: 0px; }
+	#menubar .separator { display: none; }
+	#menubar .menu { padding-left: 4px; padding-right: 4px; }
+	#matter { font-size: 16px; }
 	#menubar { text-align: center; font-size: 18px;}
 }
