@@ -1,4 +1,4 @@
-/* Color scheme 
+/* Color scheme
 http://paletton.com/#uid=3000u0k00w000Gc00-f01uA09rc
 */
 
@@ -21,8 +21,16 @@ body {
 	font-size: 20px;
 	width: 100%;
 	top: 0px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	position: fixed;
+	background-color: #E3E3E3;
+}
+
+#menudata {
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 15px;
+	padding-bottom: 15px;
 	background-color: #818282;
 }
 
@@ -80,14 +88,17 @@ body {
 
 #matter {
 	font-family: "Segoe UI", "Consolas";
-	font-size: 18px;
+	font-size: 20px;
 	color: #3C3C3C;
+	background-image: url('lambda.png');
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
-#footer { 
+#footer {
 	text-align: center;
-	position: fixed;
-	bottom: 0px; 
+	/*position: fixed;*/
+	bottom: 0px;
 	padding-top: 5px;
 	padding-bottom: 5px;
 	width: 100%;
@@ -117,27 +128,32 @@ body {
 #links a .fa-facebook-square { color: #3b5998;}
 #links a .fa-google-plus-square { color: #d94635;}
 #links a .fa-skype { color: #00a7e5;}
+#links a .fa-trello { color: #0078be; }
 
 /** media queries **/
 
 @media all and (max-width: 1050px) {
+	#menudata {
+		width: 95%;
+	}
 	#content {
 		width: 95%;
 	}
 	#post {
 		float: none;
-		margin-left: 250px;
+		margin-left: 230px;
 		width: auto;
 	}
-	
 }
 
 @media only screen and (max-width: 520px) { /* mobiles */
 	#content { width: 100%; }
 	#shortbio { display: none; }
 	#post { margin-left: 10px; margin-right: 10px; }
+	#post h1 { padding-bottom: 0.5em; }
 	#menubar .separator { display: none; }
+	#menudata {width: 100%;}
 	#menubar .menu { padding-left: 4px; padding-right: 4px; }
-	#matter { font-size: 16px; }
+	#matter { font-size: 18px; }
 	#menubar { text-align: center; font-size: 18px;}
 }
